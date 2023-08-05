@@ -30,8 +30,19 @@ export const CartProvider = ({ children }) => {
 
   const removeItem = useCallback(
     (itemId) => {
-      const cartUpdated = cart.filter((prod) => prod.id !== itemId);
-      setCart(cartUpdated);
+      const itemToRemove = cart.find((prod) => prod.id === itemId);
+
+      if (itemToRemove) {
+        if (itemToRemove.quantity === 1) {
+          const updatedCart = cart.filter((prod) => prod.id !== itemId);
+          setCart(updatedCart);
+        } else {
+          const updatedCart = cart.map((prod) =>
+            prod.id === itemId ? { ...prod, quantity: prod.quantity - 1 } : prod
+          );
+          setCart(updatedCart);
+        }
+      }
     },
     [cart]
   );

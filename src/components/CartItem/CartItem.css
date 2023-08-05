@@ -11,3 +11,10 @@
   object-fit: cover;
   margin-right: 10px;
 } */
+
+.btn-eliminar {
+  color: red;
+  font-size: 12px;
+  padding: 4px 4px;
+  width: 10%;
+}
