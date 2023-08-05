@@ -1,0 +1,50 @@
+.CartContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.CartItemsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.CartItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.CartItemImg {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.CartSummary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+.Button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.Option {
+  color: #007bff;
+  text-decoration: none;
+}
