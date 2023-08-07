@@ -13,6 +13,7 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
 
     const item = {
       id,
+      img,
       name,
       price,
     };
