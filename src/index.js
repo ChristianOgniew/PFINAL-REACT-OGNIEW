@@ -16,7 +16,7 @@ import { getFirestore, collection, addDoc } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyB9MhHhb7aeGSmD3aZjd9JIt2RVUWy4qmA",
+  apiKey: process.env.REACT_API_KEY,
   authDomain: "ecommerce-hyggeclothes.firebaseapp.com",
   projectId: "ecommerce-hyggeclothes",
   storageBucket: "ecommerce-hyggeclothes.appspot.com",
